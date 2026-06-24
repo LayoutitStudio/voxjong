@@ -7,12 +7,16 @@
     "build": "NUXT_BUILD_DIR=.nuxt-build nuxt build",
     "audit": "npm audit --omit=dev --audit-level=moderate",
     "audit:all": "npm audit --omit=dev",
-    "check": "npm run build",
+    "check": "npm run test && npm run build",
     "clean": "nuxi cleanup && rm -rf .nuxt-build .nuxt-dev .nuxt-generate .nuxt-preview .output dist",
     "dev": "NUXT_BUILD_DIR=.nuxt-dev nuxt dev",
     "generate": "NUXT_BUILD_DIR=.nuxt-generate nuxt generate && rm -rf dist && cp -R .output/public dist",
     "postinstall": "nuxt prepare",
-    "preview": "NUXT_BUILD_DIR=.nuxt-preview nuxt preview"
+    "preview": "NUXT_BUILD_DIR=.nuxt-preview nuxt preview",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.6"
   },
   "keywords": [
     "mahjong",
