@@ -57,4 +57,11 @@ in build output.
 
 ## License
 
-VoxJong source code is [ISC](LICENSE).
+VoxJong source code is Copyright (C) 2026 Layoutit and licensed under
+[GPL-3.0-or-later](LICENSE).
+
+Mahjong tile images derived from
+[FluffyStuff/riichi-mahjong-tiles](https://github.com/FluffyStuff/riichi-mahjong-tiles)
+are in the public domain. Project-specific artwork is distributed under the
+same project license unless noted otherwise. Runtime dependencies keep their
+own licenses as declared in their package metadata.
